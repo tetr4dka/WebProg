@@ -3,10 +3,10 @@
 if (!empty($_REQUEST['text']))
 {
     $str = $_REQUEST['text'];
-    $Length = strlen($str);
-    $Count = count(explode(' ', $str));
-    $spaceCount = $Count - 1;
-    echo 'В тексте '.$Count.' слов, '.$Length.' символов.';
+    $strLen = strlen($str);
+    $wordsCount = count(explode(' ', $str));
+    $spaceCount = $wordsCount - 1;
+    echo 'В тексте '.$wordsCount.' слов, '.$strLen.' символов.';
 }
 ?>
     <form action="" method="get">
